@@ -1,0 +1,105 @@
+
+    /* ----- making the profile section */
+
+    .sub-menu-wrap {
+        position: absolute;
+        top:100%;
+        right:10%;
+        width:4rem;
+        max-height: 400px;
+        overflow:hidden;
+        transition:max-height 0.5s;
+        visibility: none;
+        /* border:2px solid black; */
+
+        display:none;
+        
+    }
+    .sub-menu-wrap.open-menu {
+        max-height:400px; 
+        visibility: visible; 
+          z-index:99999 !important;
+          display: contents; 
+             
+    }
+    /* .open-menu .sub-menu {
+        /* position:relative; */
+        /* margin-right:40rem; */
+        /* top: 3rem; */
+        /* right: 12rem; 
+    }
+    */
+     
+    .sub-menu {
+        background:#fff;
+        padding:20px;
+        margin: 10px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+        max-width:20rem !important;
+        left:75%;
+        /* float:right; */
+        position:absolute;
+        z-index:9999;
+             /* border:2px solid black; */
+    }
+    .user-info {
+        display: flex;
+        align-items:center;
+    }
+    .user-info h3 {
+        font-weight:500;
+    }
+    .user-info i {
+        /* width:60px; */
+        /* border-radius:50%; */
+        margin-right:.8rem;
+    }
+
+    .sub-menu hr {
+        border:0;
+        height:1px;
+        width:100%;
+        background:#ccc;
+        margin:15px 0 10px;
+    }
+
+
+    .sub-menu-link {
+        display:flex;
+        align-items: center;
+        text-decoration: none;
+        color:#525252;
+        margin:12px 0;
+    }
+
+    .sub-menu-link p {
+        width: 100%;
+        font-weight: 200;
+        transition:transform 0.5s;
+    }
+    .sub-menu-link p:hover{
+        transform:translateX(5px);
+    }
+
+    .sub-menu-link i {
+        width:4rem;
+        background:#e5e5e5;
+        border-radius:50%;
+        padding: .8rem;
+        margin-right: 15px;
+        align-items: center;
+
+    }
+
+    .sub-menu-link span {
+        font-size:22px;
+        transition:transform 0.5s;
+    }
+    .sub-menu-link:hover span
+    {
+        transform:translateX(5px);
+    }
+    .sub-menu-link:hover p {
+        font-weight:800 !important;
+    }
+

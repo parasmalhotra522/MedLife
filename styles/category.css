@@ -1,0 +1,17 @@
+.card-btn {
+    padding: 1em; 
+    margin-bottom: 0.5em; 
+    border-radius: 10px; 
+    background-color: #df616a; 
+    color:white; 
+    border:none;
+    }
+    .card-btn:hover {
+        transform: scale(1.01, 1.01);
+        transition: all .85s ease;
+    }
+    .desc {
+        white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+    }

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+
+    <!---->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="./styles/home-styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/user-profile.css">
+   
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .about-us-video {
+            text-align: center;
+            margin:1.2rem;
+        }
+        #packall{
+            box-shadow: 0 0 14px #bbb;
+        }
+        #photo {
+            border: 2px solid black;
+            padding: 1.2rem 3.5% 1.2rem 3.5%;
+            margin:0 4% 0 4%;
+        }
+        aside {
+            width: 30%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: right;
+            font-style: italic;
+            text-shadow: 25em;
+            color: black;
+            background-color: rgb(239, 239, 94);
+        }
+        .founders{
+            padding-right: 2%;
+           
+            margin-right: 1%;
+            background-color: white;
+            line-height: 1.5em;
+            text-align: justify;
+            padding-bottom:0;
+            margin-bottom: 0;
+            padding-left: 0;
+        }
+        .foundersR{
+            padding-left: 0.5%;
+            padding-right: 0.5%;
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+            background-color: white;
+            line-height: 1.5em;
+            text-align: justify;
+            /* margin-top:-11rem; */
+        }
+        .aivideo{
+            align-content: center;
+            border: 2px solid black;
+            width:36rem;
+            height:auto;
+        }
+        .align-center {
+            align-items: center;
+        }
+
+        .article-style {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .video-container {
+            padding:1.1rem;
+            /* border:1px solid #000; */
+            box-shadow: 0 0 14px #bbb;
+            margin: 2rem 0 2rem 0;
+        }
+        
+        .member_counter {
+            /* background-image: -webkit-linear-gradient(0deg, #ee390f 0%, #f9b700 100%);*/
+                background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+                padding: 73px 0px 73px;
+                margin-top:5%;
+            }
+            .row {
+                display: flex;
+            }
+            .col-lg-3 {
+                width:25%;
+                text-align: center;
+            }
+            .col-lg-3 .single_member_counter h4,span {
+                color:#fff;
+                font-family: inherit;
+                font-size:1.5rem;
+            }
+       
+    </style>
+</head>
+<body>
+  
+    <header>
+            
+        <!--    The Upper Navbar   -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+           <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="./index.html" class="navbar-brand">
+                        <img src="./assets/images/logo-image.png" class="logo-image">
+                    </a>
+                 </div>
+
+
+                 <div class="collapse navbar-collapse nav-bar  col-md-10 upper-nav-bar" id="navbarCollapse">
+                    <div class="navbar-nav col-md-7">
+                        <input type="search"
+                         style="width:64rem;"
+                        class="form-control nav-item nav-link" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
+                    </div>
+ 
+                   
+                    
+ 
+                     <!--- ------** User Cart functionality showing the number of items for a user in the cart **-----  -->
+                     <div class="navbar-nav col-md-1" style="width: 12.499999995%;flex: 0 0 12.499%;max-width: 12.499%;">
+                         <a href="./checkout-form.html" class="nav-item nav-link"
+                         id="cart-nav"
+                         >
+                             
+                             <i class="fa fa-shopping-cart"></i>
+                             Cart <script>document.getElementById('cart-nav').innerHTML=`
+                             <i class="fa fa-shopping-cart"></i>
+                             Cart
+                             <span  style="border-radius:50%; background-color:#e31b6d;">
+                             
+                             <span class='badge badge-warning' style={
+                                 font-size: 12px;
+                                 background: #ff0000;
+                                 color: #fff;
+                                 padding: 0 5px;
+                                 vertical-align: top;
+                                 margin-left: -10px;
+                             }> 
+                                 ${ JSON.parse(localStorage.getItem('activeUser')).userCart.length }
+                                  </span>
+                             
+                             `
+                         
+                             </script>
+                                 
+                     </a>
+ 
+                     </div>
+                     
+                  
+                    <div class="navbar-nav col-md-2">
+                        <a target="_blank" href="sign-in.html" 
+                        id="signInBtn"
+                        class="nav-item nav-link">Sign In / Register</a>
+                    </div>
+                    <!-- User profile button -->
+                    <div class="navbar-nav col-md-2 ms-auto"
+                    style="position:absolute;
+                    left:83%;
+                    "
+                    >
+                   
+                       
+                        <a target="_blank" 
+                        id="userProfile"
+                        style="cursor: pointer; font-size: 1.2rem;padding:1.2rem;"
+                        class="nav-item nav-link fa fa-user"
+                        onclick="toggleMenu()"
+                        >
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+           
+               <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+               
+               
+           </div>
+         
+       </nav>
+       <div class="sub-menu-wrap" id="subMenu">
+           <div class="sub-menu">
+               <div class="user-info" >
+                   <img src="./assets/images/profile.webp" style="height:40px;width:30px;">
+                   <h2 id="userNameProfile" style="font-family: inherit; margin-left:.8rem;">
+
+                   </h2>
+               </div>
+               <hr>
+
+               <a href="#" class="sub-menu-link">
+                  <i class="fa fa-user fa-2x"></i>
+                   <p onclick="window.location.href=`./edit-user-profile.html`">Edit Profile ></p>
+                   
+               </a>
+
+               <a href="#" class="sub-menu-link">
+                   <i class="fa fa-cog fa-2x"></i>
+                   <p>Settings & Privacy ></p>
+                  
+               </a>
+
+               <a href="#" class="sub-menu-link" onclick="logOut()">
+                  <i class="fa fa-sign-out fa-2x"></i>
+                   <p>Logout ></p>
+               
+               </a>
+           </div>
+       </div>
+
+   </header>
+   <!-- Second-nav-bar-->
+   <nav class="navbar navbar-expand-lg navbar-light lower-navbar">
+       <div class="container-fluid">
+         
+           <div class="collapse navbar-collapse nav-bar" id="navbarCollapse">
+               <div class="navbar-nav col-md-1" style="width: 12.499999995%;flex: 0 0 12.499%;max-width: 12.499%;"><a href="./index.html" class="nav-item nav-link active-nav"><i class="fa fa-home icons"></i>Home</a></div>
+               <div class="navbar-nav col-md-1" style="width: 12.499999995%;flex: 0 0 12.499%;max-width: 12.499%;">
+               <a href="./shop.html" class="nav-item nav-link"><i class="fa fa-shopping-basket p-2"></i>Shop</a></div>
+               <div class="navbar-nav col-md-1 col-sm-2" style="width: 12.499999995%;flex: 0 0 12.499%;max-width: 12.499%;"><a href="./about.html" class="nav-item nav-link">About Us</a></div>
+               <div class="navbar-nav col-md-2 col-sm-2" id="pharmacyServices">
+                   <a href="#" class="nav-item nav-link"
+                   >Pharmacy Services</a></div>
+               <div class="navbar-nav col-md-3 col-sm-3"><a href="./doctor's-prescription.html" class="nav-item nav-link">Doctor's Prescription</a></div>
+               
+
+
+           </div>
+           
+       </div>
+   </nav>
+    
+    <!-- Modal for the medical conditions -->
+    <div id="conditions-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times</span>
+            
+            <div>
+                <h4 class="categories-heading">Categories</h4>
+                <hr>
+                <ul class="medical-categories">
+                
+                    <li>
+                        <a href="ent.html" class="medical-conditons">ENT (Ear, Nose, Throat)</a>
+                    </li>
+                    <li>
+                        <a href="./eye-care.html" class="medical-conditons">Eye Care</a>
+                  
+                    </li>
+                    <li>
+                        <a href="./allergy.html" class="medical-conditons">Allergies</a>
+                  
+                    </li>
+                    <li>
+                        <a href="./diabetes.html" class="medical-conditons">Diabetes</a>
+                    </li>
+                    <li>
+                        <a href="./mental-health.html" class="medical-conditons">Mental Health</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- main -->
+    <main>
+       <!-- Stats -->
+
+       <section id="mission">
+       
+        <article class="founders">
+            <h1 style="font-size:2rem;font-weight:700;" >MISSION </h1>
+            <p> At MedLife, <b>we are on mission to care customer's health by Providing Convenient and Accessible Healthcare and while offers top match medication.</b> 
+                Medlife also collaborate with healthcare providers, including doctors, hospitals, and pharmacies, to ensure seamless communication, coordination, and integration of healthcare services.</p>
+        </article>
+       </section>
+       <div>
+        <h1>Statistics</h1>
+        </div>
+        <section class="member_counter" id="about">
+            
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single_member_counter">
+                            <span class="counter">80+</span>
+                            <h4>Countries</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single_member_counter">
+                            <span class="counter">170000+</span>
+                            <h4>Happy Customers</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single_member_counter">
+                            <span class="counter">5510</span>
+                            <h4>Employees</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single_member_counter">
+                            <span class="counter">2M+</span>
+                            <h4>Orders Executed</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+
+        <section id="packall">
+        <table>
+            <caption class="align-center"><h1> > It all started with Vision! </h1></caption>
+            <tbody>
+                <tr>
+                    <th>
+                        <img id="photo" src="./assets/images/firststore.jpg" style="height: 15em; width: 25em; box-shadow: 0px 2.5px 2.5px #aaaaaa;"><br>
+                        <br>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.435868150161!2d-79.56437648526953!3d43.639099161361756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b382044c22ae3%3A0x90018d0994ed8acf!2s1%20Eva%20Rd%2C%20Etobicoke%2C%20ON%20M9C%204Z5!5e0!3m2!1sen!2sca!4v1680904096641!5m2!1sen!2sca" width="400" height="250" style="box-shadow: 0px 2.5px 2.5px #aaaaaa; border: solid 2px; margin-left: 1.2em;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <h4 style="text-align:left; padding:2rem;"><u><b>Address:</b></u> <i>1 Eva Road, M9C 4Z5, Etobicoke, Canada</i></h4>
+                        <h4 style="text-align:left; padding:1rem 2rem;" ><u><b>Timings:</b></u> <i>7 AM to 9 PM Monday to Friday </i></h4>
+                    </th>
+                    <td class="artcile-style">
+                        <article class="foundersR">
+                            <ol class="style-list">
+                                <li>Once upon a time, in a small town, a young entrepreneur named Sarah had a vision to make healthcare more accessible and convenient for people. Inspired by her own experiences of struggling to find reliable healthcare services, Sarah set out to create a website that would revolutionize the way people access medication, doctors' appointments, and personal care products.With unwavering determination and a team of like-minded individuals, Sarah founded a company called "Medlife" and launched its website</li><br>
+                                <li>Medlife's mission was to provide a one-stop solution for people's healthcare needs. The website offered a wide range of services, including an online pharmacy where users could order genuine medicines from trusted sources, a telemedicine platform that allowed users to book virtual appointments with qualified doctors, and an online store that offered personal care products for a holistic approach to health and wellness.</li>
+                                <li>To further enhance the user experience, Medlife invested in technology and innovation. They developed a user-friendly mobile app that allowed users to easily access the website's services on their smartphones, set medication reminders, and track their health progress. They also implemented advanced data analytics and personalized recommendations to provide tailored healthcare solutions based on users' health profiles and preferences.</li><br>
+                                <li> As Medlife grew in popularity, they expanded their services to cover more regions and introduced additional features, such as health awareness campaigns, online health assessments, and home healthcare services. They also fostered collaborations with local healthcare providers to ensure seamless coordination and integration of healthcare services for users.With time, Medlife became a trusted and reliable healthcare platform, earning the loyalty and trust of millions of users. Many people found comfort and convenience in accessing medication, doctors' appointments, and personal care products through Medlife's website and mobile app. The company continued to innovate, evolve, and positively impact the lives of people by making healthcare more accessible, convenient, and personalized..</li><br>
+                            </ol>
+                        </article><br>
+                    </td>
+                </tr>
+                <tr>
+                
+                    <td colspan="2">
+                        <article class="founders">
+                            <h1 style="text-align:center;font-size:2rem;">VALUES</h1>
+                            <p style="padding-left: 4.5rem;"><b>With the added bonus of being able to return serives if they're not to your satisfaction.</b> it's no wonder that more and more people are turning 
+                                to an @Medlife's e-commerce websites for their medication needs. With a variety of services available, from personal care to medication and pharmacy services, you can 
+                                trust that you're getting the best quality. Plus, you can save money by taking advantage of online offers and discounts. So why not make your 
+                                experience a whole lot easier? Try Services online @ MedLife and get perks from our many services!</p>
+                        </article><br>
+                    </td>
+                </tr>
+                <br><br>
+                
+            </tbody>
+        </table>
+        </section>
+
+      
+    </main>
+
+<!-- ** Footer **  --->
+<!-- ** Footer **  --->
+<footer>
+    <section class="page-footer">
+
+       
+       <div class="quick-links">
+            <h2 class="text-center"> Quick Links</h2>
+            <ul class="footer-quick-links">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="./sign-in.html">Sign in</a>
+                </li>
+
+                
+                <li><a href="./about.html">About Us</a></li>
+           
+                <li>
+                    <a href="./appointment-form.html">Book an Appointment</a>
+                </li>
+            </ul>
+       
+       
+        </div>
+        <!-- Connect with us Section -->
+        <div class="quick-links">
+            <h2 class="text-center">Connect with Us</h2>
+            <ul>
+                
+                <li>
+                    <i class="fa fa-map-marker" 
+                    style="color:#FF0000;
+                    font-size: 1.5rem;
+                    padding: 1.05rem;"></i> 1 Eva Road, M9C 4Z5, Etobicoke, Canada
+                  
+
+
+                </li>
+                <li>
+                    <i class="fa fa-phone" 
+                    style="
+                    color:#00BFFF;
+                    font-size: 1.5rem;
+                    padding: 1.05rem;"></i> +1 (647)-867-4343
+                </li>
+                
+            </ul>
+
+           <div class="contactus">
+           
+            <li class="list-inline-item">
+                <a href="mailto:confusion@food.net" 
+                    target="_blank"
+                 type="button" class="button fb">
+                <span class="fa fa-envelope fa-2x spin"></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item">
+                <a href="https://www.twitter.com/elonmusk" 
+                    target="_blank"
+                    type="button" class="button fb">
+                  <span class="fa fa-twitter fa-2x spin"></span>
+                </a>
+            </li>
+           
+          
+           <li class="list-inline-item">
+            <a href="https://www.facebook.com/" 
+                target="_blank"    
+                type="button" class="button fb">
+              <span class="fa fa-facebook fa-2x spin"></span>
+            </a>
+          </li>
+
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/" 
+                target="_blank"
+                type="button" class="button fb">
+              <span class="fa fa-instagram fa-2x spin"></span>
+            </a>
+          </li>
+        
+        </div>
+       
+       
+        </div>
+
+
+        <!-- ** GET UPDATES ** -->
+        <div class="quick-links">
+            <h2 class="text-center"> Get Updates</h2>
+            
+            <form class="get-updates"> 
+                <input type="email" class="form-control" id="inputEmail"
+                    style="width:13rem;height:1.8rem;"
+                placeholder="name@email.com"
+                 data-error="Bruh, that email address is invalid" required>
+                  <br>
+               
+                <div class="submit-btn">
+            
+                    <button type="submit" 
+                        name="submit" 
+                        class="form-btn submit-footer">Send Message</button> 
+                </div>
+            </form>
+    
+       
+       
+        </div>
+
+       
+       
+    </section> 
+    <div class="footer-copyright text-center pt-2">
+        © All Copyrights are reserved by MedLife Corporations
+    </div>
+   
+
+</footer>
+
+<script>
+    /* ****----------- Pharmacy Modal ---------******* */
+    const $ = (id) => document.getElementById(id).value;
+   
+var modal = document.getElementById("conditions-modal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("pharmacyServices");
+
+// close button to close the modal
+var span = document.getElementsByClassName("close")[0];
+
+window.onload = function() {
+
+// set the default users only if there are no pre-exisitng users
+if (!localStorage.getItem("users")) {
+    localStorage.setItem('activeUser', null);
+    localStorage.setItem("users", JSON.stringify(users));
+}
+allUsers = JSON.parse(localStorage.getItem('users'));
+console.log("all users", allUsers);
+
+
+    activeUser = JSON.parse(localStorage.getItem('activeUser'));
+    console.log("Check active user", activeUser);
+    document.getElementById('userProfile').hidden = true;
+    //    document.getElementById("alreadyLogged").hidden = true;
+            
+        
+        // it means user is logged in
+        // we have to hide the 
+    if(activeUser) {
+        document.getElementById('signInBtn').hidden = true;
+        document.getElementById('userProfile').hidden = false;
+        document.getElementById('userProfile').innerHTML=activeUser.userName;
+        document.getElementById('userNameProfile').innerHTML=activeUser.userName;
+            
+        // document.getElementById("alreadyLogged").hidden = false;
+                
+    }
+
+
+
+}
+
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+/* ****----------- Pharmacy Modal ends ------******** */
+
+
+
+function backtotop() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+let subMenu = document.getElementById("subMenu");
+function toggleMenu() {
+    console.log("toggle ");
+    subMenu.classList.toggle("open-menu");
+    document.querySelector("sub-menu-wrap").classList.add('display:inline');
+
+    }
+
+ 
+  // function to logout and clear the local storage for any kind of data stored and route back to home
+  function logOut() {
+                console.log("Function getting called");
+                // changing the flag value of the boolean to false; for the active user
+                localStorage.setItem('activeUser', JSON.stringify(JSON.parse(localStorage.getItem("activeUser")).isLoggedIn = false));
+                 window.location.href="./index.html";
+                
+            }
+    function routeToAppointments() {
+            window.location.href="./appointment-form.html";
+        }
+
+</script>
+</body>
+</html>

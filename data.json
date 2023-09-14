@@ -1,0 +1,261 @@
+[
+    {
+        "productId":"5667197",
+        "name" : "Tylenol",
+        "price" : "12",
+        "description" : " Acetaminophen is a pain reliever and fever reducer. It is thought to work to relieve minor aches and pains by elevating the body’s overall pain threshold so you feel less pain, and lowers your fever by helping your body eliminate excess heat.",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 56,
+        "imageUrl" : "./assets/images/IMG_8241.jpg",
+        "category" : "ENT"
+    },
+    {
+        "productId" : "5667198",
+        "name" : "aspirin",
+        "price" : "15",
+        "description" : " Aspirin is in a group of medications called salicylates. It works by stopping the production of certain natural substances that cause fever, pain, swelling, and blood clots.",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 56,
+        "imageUrl" : "./assets/images/IMG_8242.jpg",
+        "category" : "ENT"
+    },
+    
+
+    {
+        "productId":"5667200",
+        "name" : "Afrin",
+        "price" : "19",
+        "description" : " This medication is used for temporary relief of congestion in the nose caused by various conditions including the common cold, sinusitis, hay fever, and allergies. It works by narrowing the blood vessels in the nose area, reducing swelling and congestion.",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 43,
+        "imageUrl" : "./assets/images/IMG_8243.jpg",
+        "category" : "ENT"
+    },
+
+
+    {
+        "productId":"5667209",
+        "name" : " privine",
+        "price" : "19",
+        "description" : " Naphazoline nasal is a decongestant that shrinks blood vessels in the nasal passages. Dilated blood vessels can cause nasal congestion (stuffy nose).  ",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 28,
+        "imageUrl" : "./assets/images/nasal.jpg",
+        "category" : "ENT"
+    },
+    {
+        "productId" : "5667210",
+        "name" : "afrin",
+        "price" : "59",
+        "description" : " Oxymetazoline is a decongestant that shrinks blood vessels in the nasal passages. Dilated blood vessels can cause nasal congestion (stuffy nose). ",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 79,
+        "imageUrl" : "./assets/images/IMG_8252.jpg",
+        "category" : "ENT"
+    },
+    {
+        "productId":"5667211",
+        "name" : "dristan",
+        "price" : "19",
+        "description" : " This medication is used for temporary relief of congestion in the nose caused by various conditions including the common cold, sinusitis, hay fever, and allergies. ",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 87,
+        "imageUrl" : "./assets/images/IMG_8254.JPG",
+        "category" : "ENT"
+    },
+
+    {
+        "productId":"5667215",
+        "name" : "mortin",
+        "price" : "15",
+        "description" : " A drug used to treat fever, swelling, pain, and redness by preventing the body from making a substance that causes inflammation ",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 89,
+        "imageUrl" : "./assets/images/IMG_8256.jpg",
+        "category" : "ENT"
+    },
+
+
+
+{
+        "productId":"5667201",
+        "name" : "Lantus",
+        "price" : "23",
+        "description" : " Prescription LANTUS is a long-acting man-made-insulin used to control high blood sugar in adults and children with diabetes mellitus.",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 56,
+        "imageUrl" : "./assets/images/IMG_8244.JPG",
+        "category" : "Diabetes"
+    },
+    {
+        "productId" : "5667202",
+        "name" : "soliqua",
+        "price" : "45",
+        "description" : " SOLIQUA 100/33 is a combination of insulin glargine and lixisenatide and is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus inadequately controlled on basal insulin (less than 60 units daily) or lixisenatide. ",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 98,
+        "imageUrl" : "./assets/images/IMG_8245.JPG",
+        "category" : "diabetes"
+    },
+    {
+        "productId":"5667203",
+        "name" : "toujeo",
+        "price" : "34",
+        "description" : " Toujeo is a long-acting human insulin analog indicated to improve glycemic control in adults and pediatric patients 6 years and older with diabetes mellitus. ",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 67,
+        "imageUrl" : "./assets/images/IMG_8246.JPG",
+        "category" : "diabetes"
+    },
+
+    {
+        "productId":"5667204",
+        "name" : "Trulicity",
+        "price" : "49",
+        "description" : " Trulicity is a non-insulin option that helps your body release the insulin it's already making.  ",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 19,
+        "imageUrl" : "./assets/images/IMG_8247.JPG",
+        "category" : "diabetes"
+    },
+
+    {
+        "productId":"5667205",
+        "name" : "Diamox",
+        "price" : "19",
+        "description" : " Acetazolamide is a diuretic medication that treats swelling caused by heart disease. It works by helping your body make more pee so you can lose salt and excess water from your body.",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 76,
+        "imageUrl" : "./assets/images/IMG_8248.jpg",
+        "category" : "Eye"
+    },
+    {
+        "productId":"5667207",
+        "name" : "lopidine",
+        "price" : "20",
+        "description" : " Iopidine is an eye drop used in conjunction with other medications, to lower raised pressure within your eyes. Iopidine does this by reducing the amount of fluid produced within your eyes. Iopidine is used to lower raised pressure in the eye and to treat glaucoma.",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 50,
+        "imageUrl" : "./assets/images/IMG_8250.jpg",
+        "category" : "Eye"
+    },
+
+    {
+        "productId":"5667208",
+        "name" : "Atropine",
+        "price" : "19",
+        "description" : " Atropine/diphenoxylate is an antimotility agent that can be useful in the treatment of diarrhea as second-line therapy by allowing the central acting opioid effect of diphenoxylate and capitalization on its anticholinergic side effect of constipation to slow motility. ",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 487,
+        "imageUrl" : "./assets/images/atropineSulfate.jpg",
+        "category" : "Eye"
+    },
+
+
+    {
+        "productId":"5667217",
+        "name" : "Zoloft",
+        "price" : "78.99",
+        "description" : "Sertraline is used to treat depression, obsessive-compulsive disorder (bothersome thoughts that won't go away and the need to perform certain actions over and over), panic attacks (sudden, unexpected attacks of extreme fear and worry about these attacks), posttraumatic stress disorder.",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 56,
+        "imageUrl" : "./assets/images/IMG_8266.JPG",
+        "category" : "mentalHealth"
+    },
+
+
+    {
+        "productId":"5667218",
+        "name" : "Xanax",
+        "price" : "129.99",
+        "description" : " Alprazolam is used to treat anxiety disorders and panic disorder (sudden, unexpected attacks of extreme fear and worry about these attacks).",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 56,
+        "imageUrl" : "./assets/images/xanax.jpg",
+        "category" : "mentalHealth"
+    },
+
+
+    {
+        "productId":"5667219",
+        "name" : "Lamictal",
+        "price" : "69.69",
+        "description": "Lamictal is an anti-epileptic medication, also called an anticonvulsant. Lamictal is used alone or with other medications to treat epileptic seizures in adults and children,",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 56,
+        "imageUrl" : "./assets/images/IMG_8268.jpg",
+        "category" : "mentalHealth"
+    },
+
+    {
+        "productId":"5667220",
+        "name" : "Ativan",
+        "price" : "87.99",
+        "description" : " Lorazepam is used to treat anxiety disorders. It is also used for short-term relief of the symptoms of anxiety or anxiety caused by depression.",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 56,
+        "imageUrl" : "./assets/images/IMG_8269.jpg",
+        "category" : "mentalHealth"
+    },
+
+
+
+{
+        "productId":"5667221",
+        "name" : "Cetirizine",
+        "price" : "87.99",
+        "description" : " Lorazepam is used to treat anxiety disorders. It is also used for short-term relief of the symptoms of anxiety or anxiety caused by depression.",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 56.89,
+        "imageUrl" : "./assets/images/IMG_8270.JPG",
+        "category" : "ALLERGIES"
+    },
+
+{
+        "productId":"5667222",
+        "name" : "DESLORATADINE",
+        "price" : "97.99",
+        "description" : " Lorazepam is used to treat anxiety disorders. It is also used for short-term relief of the symptoms of anxiety or anxiety caused by depression.",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 56.89,
+        "imageUrl" : "./assets/images/IMG_8271.jpg",
+        "category" : "ALLERGIES"
+    },
+
+{
+        "productId":"5667223",
+        "name" : "Fexofenadine",
+        "price" : "87.99",
+        "description" : " Lorazepam is used to treat anxiety disorders. It is also used for short-term relief of the symptoms of anxiety or anxiety caused by depression.",
+        "isPrescribed" : false,
+        "netQuantity" : 0,
+        "availableQuantity" : 56.89,
+        "imageUrl" : "./assets/images/IMG_8272.JPG",
+        "category" : "ALLERGIES"
+    }
+
+
+]
+
+
+
